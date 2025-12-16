@@ -1,4 +1,5 @@
 <html>
+
 	<head>
 	
 		<title>Menu' Pizzeria</title>
@@ -7,14 +8,15 @@
 		<html lang="IT"/>
 		<meta charset="UTF-8"/>
 		<link rel="icon" href=""/>
+		<link rel="stylesheet" type="text/css" href="./stile.css"/>
 		
 	</head>
 
 	<body>
 	
-		<div>
+		<div class="introduzione">
 			<h1><marquee>Menu' Pizzeria</marquee></h1>
-			<center><h2>Benvenuti nella nostra <b>incredibile</b> pizzeria! Questo e' il nostro menu':</h2></center>
+			<center><h2>Benvenuti nella nostra <strong>incredibile</strong> pizzeria! Questo e' il nostro menu':</h2></center>
 		</div> <!--Introduzione-->
 		
 		<div>
@@ -34,3 +36,128 @@
 	</body>
 	
 </html>
+
+<!--COMANDI UTILIZZATI-->
+
+<!--
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Tutti i diritti riservati.
+
+Installa la versione più recente di PowerShell per nuove funzionalità e miglioramenti. https://aka.ms/PSWindows
+
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git init
+Initialized empty Git repository in C:/Users/Studente/Desktop/5CI/TPS/esClasse/.git/
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> ls
+
+
+    Directory: C:\Users\Studente\Desktop\5CI\TPS\esClasse
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        16/12/2025     09:29              0 pizzeria.txt
+
+
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git add --all
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git branch sviluppatoreA
+fatal: not a valid object name: 'master'
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git branch
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git branch A
+fatal: not a valid object name: 'master'
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git commit -m "Creazione ramo master"
+[master (root-commit) 403a376] Creazione ramo master
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 pizzeria.txt
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git branch sviluppatoreA
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git branch sviluppatoreB
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git branch sviluppatoreC
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git add --all
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git commit -m "creazione branch a, b e c"
+[master 6e40709] creazione branch a, b e c
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename pizzeria.txt => pizzeria.html (100%)
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git remote add origin https://github.com/MatWasTakenAlready/pizzeriaMaConGit.git
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (5/5), 465 bytes | 465.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/MatWasTakenAlready/pizzeriaMaConGit.git
+ * [new branch]      master -> master
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git checkout sviluppatoreA
+Switched to branch 'sviluppatoreA'
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git commit -m "branch A"
+On branch sviluppatoreA
+nothing to commit, working tree clean
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git push origin sviluppatoreA
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'sviluppatoreA' on GitHub by visiting:
+remote:      https://github.com/MatWasTakenAlready/pizzeriaMaConGit/pull/new/sviluppatoreA
+remote:
+To https://github.com/MatWasTakenAlready/pizzeriaMaConGit.git
+ * [new branch]      sviluppatoreA -> sviluppatoreA
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git checkout sviluppatoreB
+Switched to branch 'sviluppatoreB'
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git push origin sviluppatoreB
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'sviluppatoreB' on GitHub by visiting:
+remote:      https://github.com/MatWasTakenAlready/pizzeriaMaConGit/pull/new/sviluppatoreB
+remote:
+To https://github.com/MatWasTakenAlready/pizzeriaMaConGit.git
+ * [new branch]      sviluppatoreB -> sviluppatoreB
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git checkout sviluppatoreC
+Switched to branch 'sviluppatoreC'
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git push origin sviluppatoreC
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'sviluppatoreC' on GitHub by visiting:
+remote:      https://github.com/MatWasTakenAlready/pizzeriaMaConGit/pull/new/sviluppatoreC
+remote:
+To https://github.com/MatWasTakenAlready/pizzeriaMaConGit.git
+ * [new branch]      sviluppatoreC -> sviluppatoreC
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git checkout master
+Switched to branch 'master'
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git add --all
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git commit -m "Creazione scheletro progetto"
+[master 6226655] Creazione scheletro progetto
+ 1 file changed, 36 insertions(+)
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 617 bytes | 617.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/MatWasTakenAlready/pizzeriaMaConGit.git
+   6e40709..6226655  master -> master
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git merge master sviluppatoreA
+Already up to date.
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git merge sviluppatoreA master
+Already up to date.
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git merge sviluppatoreB master
+Already up to date.
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git checkout
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git checkout sviluppatoreA
+Switched to branch 'sviluppatoreA'
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git merge master sviluppatoreA
+Updating 403a376..6226655
+Fast-forward
+ pizzeria.html | 36 ++++++++++++++++++++++++++++++++++++
+ pizzeria.txt  |  0
+ 2 files changed, 36 insertions(+)
+ create mode 100644 pizzeria.html
+ delete mode 100644 pizzeria.txt
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git add --all
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git commit -m "merge con Master"
+On branch sviluppatoreA
+nothing to commit, working tree clean
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse> git checkout master
+Switched to branch 'master'
+PS C:\Users\Studente\Desktop\5CI\TPS\esClasse>
+
+
+-->
